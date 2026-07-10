@@ -17,7 +17,7 @@
 
 ## Favorite generations
 
-These samples come from the full pipeline: images are compressed into a learned latent space, a diffusion model learns to generate in that latent space, and the decoder maps generated latents back into pixels.
+These samples come from the full pipeline: An autoencoder learns a compressed latent space, a diffusion model learns to generate in that latent space, and the decoder maps generated latents back into pixels.
 <table>
   <tr>
     <td><img src="diffusionSavedImages/14Hrs_7-9-26_8HR/savedIm0007/decoded.png" alt="Generated sample 0007" /></td>
