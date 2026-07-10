@@ -18,7 +18,6 @@
 ## Favorite generations
 
 These samples come from the full pipeline: images are compressed into a learned latent space, a diffusion model learns to generate in that latent space, and the decoder maps generated latents back into pixels.
-
 <table>
   <tr>
     <td><img src="diffusionSavedImages/14Hrs_7-9-26_8HR/savedIm0007/decoded.png" alt="Generated sample 0007" /></td>
@@ -29,7 +28,24 @@ These samples come from the full pipeline: images are compressed into a learned 
     <td><img src="diffusionSavedImages/14Hrs_7-9-26_8HR/savedIm0004/decoded.png" alt="Generated sample 0004" /></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="diffusionSavedImages/14Hrs_7-9-26_8HR/savedIm0003/decoded.png" alt="Generated sample 0003" width="50%" /></td>
+    <td align="center">
+      <img src="diffusionSavedImages/14Hrs_7-9-26_8HR/savedIm0003/decoded.png" alt="Generated sample 0003" />
+      <br />
+      <sub>Decoded 512×392 image</sub>
+    </td>
+    <td align="center">
+      <img src="diffusionSavedImages/14Hrs_7-9-26_8HR/savedIm0003/latent.png" alt="Generated latent for sample 0003" />
+      <br />
+      <sub>Generated 64×48 latent</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <sub>
+        Although the pixel-space image is visibly clearer, the diffusion model generates only the compact latent.
+        The full 512×392 image is produced by the decoder trained in this project, which interprets the 64×48 latent representation into pixels.
+      </sub>
+    </td>
   </tr>
 </table>
 
@@ -51,16 +67,33 @@ Before the diffusion model can learn the latent world, the autoencoder has to le
 
 <table>
   <tr>
-    <th>~500 steps<br /><sub>about 15 min</sub></th>
-    <th>~5,000 steps<br /><sub>about 150 min</sub></th>
-    <th>~19,000 steps<br /><sub>about 10 hrs</sub></th>
+    <th align="left">~500 steps <sub>about 15 min</sub></th>
   </tr>
   <tr>
-    <td><img src="runs/vqgan_fantasy/samples/step_00000500.png" alt="VQGAN autoencoder training sample at step 500" /></td>
-    <td><img src="runs/vqgan_fantasy/samples/step_00005000.png" alt="VQGAN autoencoder training sample at step 5000" /></td>
-    <td><img src="runs/vqgan_fantasy/samples/step_00019000.png" alt="VQGAN autoencoder training sample at step 19000" /></td>
+    <td>
+      <img src="runs/vqgan_fantasy/samples/step_00000500.png" alt="VQGAN autoencoder training sample at step 500" />
+    </td>
+  </tr>
+  <tr>
+    <th align="left">~5,000 steps <sub>about 150 min</sub></th>
+  </tr>
+  <tr>
+    <td>
+      <img src="runs/vqgan_fantasy/samples/step_00005000.png" alt="VQGAN autoencoder training sample at step 5000" />
+    </td>
+  </tr>
+  <tr>
+    <th align="left">~19,000 steps <sub>about 10 hrs</sub></th>
+  </tr>
+  <tr>
+    <td>
+      <img src="runs/vqgan_fantasy/samples/step_00019000.png" alt="VQGAN autoencoder training sample at step 19000" />
+    </td>
   </tr>
 </table>
+
+Top Row of Each Panel: True images from dataset.
+Bottom Row of Each Panel: Reconstructed images after going through the autoencoding model.
 
 ---
 
