@@ -42,8 +42,8 @@ These samples come from the full pipeline: images are compressed into a learned 
   <tr>
     <td colspan="2" align="center">
       <sub>
-        Although the pixel-space image is visibly clearer, the diffusion model generates only the compact latent.
-        The full 512×392 image is produced by the decoder trained in this project, which interprets the 64×48 latent representation into pixels.
+        While the pixel-space image is visibly clearer, the diffusion model generates only the compact latent.
+        The full 512×392 image is produced by the decoder trained in this project, which interprets the 64×48 latent representation into pixels. Since my latent vectors have dimension 3, I can honestly depict them as an rgb image! So, this truly is a 64x increase in resolution through the decoder. 
       </sub>
     </td>
   </tr>
