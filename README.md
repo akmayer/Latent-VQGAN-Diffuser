@@ -134,3 +134,4 @@ Pixel-space diffusion is expensive and hard: See my previous repo, Generative De
 
 * Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, Björn Ommer — [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)
 * Tero Karras, Miika Aittala, Timo Aila, Samuli Laine — [Elucidating the Design Space of Diffusion-Based Generative Models](https://arxiv.org/abs/2206.00364)
+* Dataset: (https://www.kaggle.com/datasets/nerfviking/fantasyscifi-full-body-character-concepts) _Yes, I understand that this is probably not the most ethical data source. However, it's extremely clean, large enough to make an interesting project on, and as far as this repo goes intended for educational purposes only._
