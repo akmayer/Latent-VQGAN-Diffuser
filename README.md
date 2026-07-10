@@ -93,6 +93,7 @@ Before the diffusion model can learn the latent world, the autoencoder has to le
 </table>
 
 Top Row of Each Panel: True images from dataset.
+
 Bottom Row of Each Panel: Reconstructed images after going through the autoencoding model.
 
 ---
